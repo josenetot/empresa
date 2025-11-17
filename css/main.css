@@ -2486,3 +2486,246 @@ body::after {
         padding: 4px 10px;
     }
 }
+
+.lazy-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.lazy-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ===========================
+   RESPONSIVO – TABLET (≤ 992px)
+   =========================== */
+
+@media (max-width: 992px) {
+    .home {
+        padding-top: 110px;
+        padding-bottom: 80px;
+    }
+    .logo-img {
+        width: 180px;
+        margin-bottom: 18px;
+    }
+    .title {
+        font-size: 1.4rem;
+        margin-bottom: 55px;
+        padding: 0 8%;
+    }
+    .info-section {
+        padding: 40px 8%;
+        gap: 24px;
+    }
+    .info-block {
+        width: 260px;
+    }
+    .whatsapp-section {
+        padding: 60px 8%;
+        gap: 30px;
+    }
+    .service-block,
+    .maintenance-purple {
+        width: 90%;
+        padding: 80px 8%;
+        margin: 100px auto;
+    }
+    .service-inner {
+        gap: 40px;
+    }
+    .service-info {
+        max-width: 100%;
+    }
+    .service-image img,
+    .maintenance-purple .service-image img {
+        width: 320px;
+    }
+    .core-tech {
+        transform: scale(0.9);
+        transform-origin: center top;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    .tools-section {
+        padding: 90px 8%;
+    }
+    .service-builder {
+        padding: 60px 7%;
+        margin-top: 70px;
+    }
+}
+
+
+/* ===========================
+   RESPONSIVO – CELULAR (≤ 600px)
+   =========================== */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    /* HOME */
+    .home {
+        padding-top: 95px;
+        padding-bottom: 60px;
+    }
+    .logo-img {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .title {
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+        padding: 0 10%;
+    }
+    /* Navegação por pontos */
+    .nav-dots {
+        gap: 10px;
+    }
+    .nav-dots .line {
+        width: 35px;
+    }
+    .dot {
+        width: 18px;
+        height: 18px;
+    }
+    .dot-box p {
+        font-size: 0.6rem;
+    }
+    /* Blocos iniciais */
+    .info-section {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 8%;
+        gap: 18px;
+    }
+    .info-block {
+        width: 100%;
+    }
+    /* WHATSAPP */
+    .whatsapp-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 8%;
+    }
+    .whatsapp-text {
+        max-width: 100%;
+    }
+    .whatsapp-text h2 {
+        font-size: 1.5rem;
+    }
+    /* SERVIÇOS / MANUTENÇÃO / VÍDEO / DESIGN / SITE */
+    .service-block,
+    .maintenance-purple {
+        width: 94%;
+        padding: 55px 7%;
+        margin: 70px auto;
+    }
+    .service-inner,
+    .maintenance-purple .service-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 28px;
+    }
+    .service-info,
+    .maintenance-purple .service-info {
+        max-width: 100%;
+    }
+    .service-image img,
+    .maintenance-purple .service-image img {
+        width: 240px;
+    }
+    .service-info h2,
+    .maintenance-purple .service-info h2 {
+        font-size: 1.5rem;
+    }
+    .service-info p,
+    .maintenance-purple .service-info p {
+        font-size: 0.95rem;
+    }
+    /* SOLUÇÕES – ÓRBITA */
+    .solutions-title {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .solutions-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 60px;
+        padding: 0 8%;
+    }
+    /* Encolhe levemente o conjunto da órbita pra caber na tela */
+    .core-tech {
+        transform: scale(0.75);
+        transform-origin: center top;
+        margin: 50px auto 30px;
+        height: 520px;
+    }
+    /* Cards de ferramentas */
+    .tools-section {
+        padding: 70px 8%;
+    }
+    .tools-grid {
+        gap: 20px;
+    }
+    .tool-card {
+        width: 45%;
+        min-width: 130px;
+        padding: 18px 10px;
+    }
+    /* SERVICE BUILDER (soluções) */
+    .service-builder {
+        padding: 50px 7%;
+        margin-top: 50px;
+    }
+    .builder-card {
+        padding: 30px 22px;
+    }
+    .builder-progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .progress-label {
+        font-size: 0.85rem;
+    }
+    .option-grid {
+        grid-template-columns: 1fr;
+    }
+    .builder-footer,
+    .summary-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .summary-card {
+        padding: 24px 18px;
+    }
+    /* CONTATO (estrutura geral) */
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact-card,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+    /* VENDAS */
+    .sales-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .sales-card {
+        width: 100%;
+    }
+    .sales-hero {
+        padding: 50px 8%;
+        text-align: center;
+    }
+}
